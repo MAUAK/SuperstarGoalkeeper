@@ -20,6 +20,18 @@ public class bola : MonoBehaviour
 
     void Update()
     {
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                if (Physics.Raycast(ray))
+                {
+                    Destroy(gameObject); // Destroi o objeto
+                    InstantiatePrefab();
+                }
+            }
+        }
         if (Input.GetMouseButtonDown(0)) // Verifica se o botão esquerdo do mouse foi clicado
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
