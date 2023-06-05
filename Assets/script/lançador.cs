@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class lançador : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class lançador : MonoBehaviour
     public float minY = -5f; // Valor mínimo para a posição Y
     public float maxY = 5f; // Valor máximo para a posição Y
 
+    
+
     void Start()
     {
         timer = spawnInterval;
@@ -27,8 +30,9 @@ public class lançador : MonoBehaviour
         if (instanceCount >= maxInstances)
         {
             // Verifica se já atingiu o número máximo de instâncias
+            
             return;
-        }
+        }        
 
         timer -= Time.deltaTime;
 
@@ -50,4 +54,6 @@ public class lançador : MonoBehaviour
 
         instanceCount++;
     }
+
+    
 }

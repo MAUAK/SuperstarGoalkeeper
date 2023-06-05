@@ -11,6 +11,8 @@ public class bola : MonoBehaviour
     private bool isMoving = false;
     public GameObject good;
 
+    public gol laa;
+
     void Start()
     {
         transform.position = startPoint.position; // Define a posição inicial da bola
@@ -27,6 +29,7 @@ public class bola : MonoBehaviour
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
                 if (Physics.Raycast(ray))
                 {
+                    laa.defesas++;
                     Destroy(gameObject); // Destroi o objeto
                     InstantiatePrefab();
                 }
@@ -39,11 +42,13 @@ public class bola : MonoBehaviour
 
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
+                laa.defesas++;
                 // Verifica se o raio atingiu um objeto e se esse objeto é o próprio objeto do script
                 Destroy(gameObject); // Destroi o objeto
                 InstantiatePrefab();
             }
         }
+
     }
 
     IEnumerator MoveToDestination()
