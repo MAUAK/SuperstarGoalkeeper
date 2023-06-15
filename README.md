@@ -41,6 +41,7 @@ Jogo em que tem que clicar na tela para defender a bola
 
 ## Distribuição
 https://github.com/MAUAK/SuperstarGoalkeeper
+https://apkpure.com/p/com.RDZ.SuperStarGoalkeeperLegends
 
 ## Pré-requisitos ⚠️    
 Versão miníma do Android - 8.0; 
