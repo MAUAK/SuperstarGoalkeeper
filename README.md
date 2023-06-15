@@ -51,7 +51,7 @@ O aparelho deve ter o touch funcionando;
 O usúario deverá baixar e abrir o aplicativo, e clicar na tela para defender a bola. O objetivo é defender 10 bolas.
 
 ## Testes realizados
-
+![af mobile](https://github.com/MAUAK/SuperstarGoalkeeper/assets/83432308/15e07adf-1f57-4e10-8fb3-d08f5c025fd9)
 
 
 ## Banco de Dados 🗂️
